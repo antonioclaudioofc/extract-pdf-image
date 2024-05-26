@@ -14,7 +14,7 @@ export default function FileUploadForm() {
     formData.append("pdf", pdf);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/upload-pdf", {
+      const response = await fetch("https://api-extract-pdf-image.onrender.com/upload-pdf", {
         method: "POST",
         body: formData,
       });
